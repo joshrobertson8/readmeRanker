@@ -1,0 +1,44 @@
+{
+  "name": "readmeranker",
+  "version": "1.0.0",
+  "description": "A command-line tool that analyzes README.md files and provides quality scores with improvement suggestions",
+  "main": "dist/index.js",
+  "bin": {
+    "readmeranker": "./dist/bin/readmeranker.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "readme",
+    "markdown",
+    "cli",
+    "analysis",
+    "documentation",
+    "quality"
+  ],
+  "author": "ReadmeRanker",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "@google/generative-ai": "^0.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.0",
+    "ts-node": "^10.9.0",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

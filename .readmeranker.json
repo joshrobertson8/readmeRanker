@@ -1,0 +1,20 @@
+{
+  "ai": {
+    "enabled": false,
+    "provider": "gemini"
+  },
+  "scoring": {
+    "weights": {
+      "Essential Documentation": 1,
+      "Usage & Examples": 1,
+      "Visual & Demo": 0.8,
+      "Project Quality": 0.9,
+      "Community & Legal": 0.7,
+      "Advanced Features": 0.6
+    }
+  },
+  "output": {
+    "format": "text",
+    "verbose": false
+  }
+}
