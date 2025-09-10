@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import * as dotenv from 'dotenv';
-import { createProgram } from './program';
+import * as dotenv from "dotenv";
+import { createProgram } from "./program";
 
 // Load environment variables early
 dotenv.config();
@@ -11,7 +11,7 @@ async function main() {
     const program = createProgram();
     await program.parseAsync();
   } catch (error) {
-    console.error('Fatal error:', error);
+    console.error("Fatal error:", error);
     process.exit(1);
   }
 }

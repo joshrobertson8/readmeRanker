@@ -1,6 +1,6 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import chalk from 'chalk';
+import * as fs from "fs";
+import * as path from "path";
+import chalk from "chalk";
 
 export interface TargetInfo {
   isLocal: boolean;
@@ -11,7 +11,7 @@ export class TargetResolver {
   resolve(target: string): TargetInfo {
     const isLocal = this.isLocalTarget(target);
     const resolvedPath = isLocal ? this.resolveLocalPath(target) : target;
-    
+
     return { isLocal, resolvedPath };
   }
 
@@ -19,7 +19,7 @@ export class TargetResolver {
     if (!fs.existsSync(filePath)) {
       throw new Error("README.md not found in the specified directory");
     }
-    
+
     return fs.readFileSync(filePath, "utf-8");
   }
 

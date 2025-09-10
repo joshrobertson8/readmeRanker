@@ -1,9 +1,9 @@
-import { Command } from 'commander';
-import { analyzeCommand } from './commands/analyze';
-import { validateCommand } from './commands/validate';
-import { configCommand } from './commands/config';
-import { createOptions } from './options';
-import { packageInfo } from '../config/package';
+import { Command } from "commander";
+import { analyzeCommand } from "./commands/analyze";
+import { validateCommand } from "./commands/validate";
+import { configCommand } from "./commands/config";
+import { createOptions } from "./options";
+import { packageInfo } from "../config/package";
 
 export function createProgram(): Command {
   const program = new Command();

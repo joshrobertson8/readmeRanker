@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-import '../cli/index';
+import "../cli/index";

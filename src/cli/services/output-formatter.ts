@@ -1,4 +1,4 @@
-import { AnalysisResult } from '../../lib/types';
+import { AnalysisResult } from "../../lib/types";
 
 export class OutputFormatter {
   outputJSON(analysis: AnalysisResult): void {
@@ -12,7 +12,7 @@ export class OutputFormatter {
       suggestions: analysis.suggestions,
       categories: analysis.categories,
       qualityMetrics: analysis.qualityMetrics,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     console.log(JSON.stringify(output, null, 2));

@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import chalk from "chalk";
 
 export class Logger {
   private verboseMode: boolean = false;
@@ -13,7 +13,7 @@ export class Logger {
 
   verbose(...args: any[]): void {
     if (this.verboseMode) {
-      console.log(chalk.gray('[VERBOSE]'), ...args);
+      console.log(chalk.gray("[VERBOSE]"), ...args);
     }
   }
 
@@ -22,10 +22,10 @@ export class Logger {
   }
 
   warn(...args: any[]): void {
-    console.warn(chalk.yellow('[WARN]'), ...args);
+    console.warn(chalk.yellow("[WARN]"), ...args);
   }
 
   success(...args: any[]): void {
-    console.log(chalk.green('[SUCCESS]'), ...args);
+    console.log(chalk.green("[SUCCESS]"), ...args);
   }
 }
